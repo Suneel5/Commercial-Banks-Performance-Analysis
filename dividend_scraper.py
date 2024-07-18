@@ -9,7 +9,7 @@ import time
 banks=['NICA','SBL','GBIME','NABIL','PRVU']
 driver=webdriver.Chrome()
 for bank in banks:
-        file_name=f"data/{bank}_Dividend.csv"
+        file_name=f"data/dividends_data/{bank}_Dividend.csv"
         driver.get(f"https://eng.merolagani.com/CompanyDetail.aspx?symbol={bank}#0")
         # dividend_button=driver.find_element(By.ID,"ctl00_ContentPlaceHolder1_CompanyDetail1_lnkDividendTab")
         time.sleep(3)

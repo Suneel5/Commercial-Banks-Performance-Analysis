@@ -1,0 +1,1554 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0618.0924                               -->
+<workbook original-version='18.1' source-build='2024.1.4 (20241.24.0618.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='bonus_share' inline='true' name='federated.1w8pl1a029r62l1ee9ib11otd8s0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='bonus_share' name='textscan.11h25ug1tb3t8n17ed0sk0icu91f'>
+            <connection class='textscan' directory='C:/Users/sunne/Videos/bbs/data' filename='bonus_share.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.11h25ug1tb3t8n17ed0sk0icu91f' name='bonus_share.csv' table='[bonus_share#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Fiscal Year' ordinal='1' />
+            <column datatype='string' name='NICA_Bonus' ordinal='2' />
+            <column datatype='string' name='PRVU_Bonus' ordinal='3' />
+            <column datatype='real' name='GBIME_Bonus' ordinal='4' />
+            <column datatype='string' name='NABIL_Bonus' ordinal='5' />
+            <column datatype='string' name='SBL_Bonus' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.11h25ug1tb3t8n17ed0sk0icu91f' name='bonus_share.csv' table='[bonus_share#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Fiscal Year' ordinal='1' />
+              <column datatype='string' name='NICA_Bonus' ordinal='2' />
+              <column datatype='string' name='PRVU_Bonus' ordinal='3' />
+              <column datatype='real' name='GBIME_Bonus' ordinal='4' />
+              <column datatype='string' name='NABIL_Bonus' ordinal='5' />
+              <column datatype='string' name='SBL_Bonus' ordinal='6' />
+            </columns>
+          </relation>
+          <relation connection='textscan.11h25ug1tb3t8n17ed0sk0icu91f' name='cash_dividend.csv' table='[cash_dividend#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Fiscal Year' ordinal='1' />
+              <column datatype='string' name='NICA_Cash' ordinal='2' />
+              <column datatype='string' name='PRVU_Cash' ordinal='3' />
+              <column datatype='string' name='GBIME_Cash' ordinal='4' />
+              <column datatype='real' name='NABIL_Cash' ordinal='5' />
+              <column datatype='string' name='SBL_Cash' ordinal='6' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[F1 (cash_dividend.csv)]' value='[cash_dividend.csv].[F1]' />
+          <map key='[F1]' value='[bonus_share.csv].[F1]' />
+          <map key='[Fiscal Year (cash_dividend.csv)]' value='[cash_dividend.csv].[Fiscal Year]' />
+          <map key='[Fiscal Year]' value='[bonus_share.csv].[Fiscal Year]' />
+          <map key='[GBIME_Bonus]' value='[bonus_share.csv].[GBIME_Bonus]' />
+          <map key='[GBIME_Cash]' value='[cash_dividend.csv].[GBIME_Cash]' />
+          <map key='[NABIL_Bonus]' value='[bonus_share.csv].[NABIL_Bonus]' />
+          <map key='[NABIL_Cash]' value='[cash_dividend.csv].[NABIL_Cash]' />
+          <map key='[NICA_Bonus]' value='[bonus_share.csv].[NICA_Bonus]' />
+          <map key='[NICA_Cash]' value='[cash_dividend.csv].[NICA_Cash]' />
+          <map key='[PRVU_Bonus]' value='[bonus_share.csv].[PRVU_Bonus]' />
+          <map key='[PRVU_Cash]' value='[cash_dividend.csv].[PRVU_Cash]' />
+          <map key='[SBL_Bonus]' value='[bonus_share.csv].[SBL_Bonus]' />
+          <map key='[SBL_Cash]' value='[cash_dividend.csv].[SBL_Cash]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fiscal Year]</local-name>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias>Fiscal Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NICA_Bonus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NICA_Bonus]</local-name>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias>NICA_Bonus</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRVU_Bonus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRVU_Bonus]</local-name>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias>PRVU_Bonus</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GBIME_Bonus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[GBIME_Bonus]</local-name>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias>GBIME_Bonus</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NABIL_Bonus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NABIL_Bonus]</local-name>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias>NABIL_Bonus</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SBL_Bonus</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SBL_Bonus]</local-name>
+            <parent-name>[bonus_share.csv]</parent-name>
+            <remote-alias>SBL_Bonus</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (cash_dividend.csv)]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fiscal Year (cash_dividend.csv)]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>Fiscal Year</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NICA_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NICA_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>NICA_Cash</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRVU_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRVU_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>PRVU_Cash</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GBIME_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GBIME_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>GBIME_Cash</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NABIL_Cash</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NABIL_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>NABIL_Cash</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SBL_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SBL_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>SBL_Cash</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='NABIL BONUS' datatype='real' name='[Calculation_1549519785040928778]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([NABIL_Bonus], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='NICA BONUS' datatype='real' name='[Calculation_1549519785041227787]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([NICA_Bonus], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='PRVU BONUS' datatype='real' name='[Calculation_1549519785041330188]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([PRVU_Bonus], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='SBL BONUS' datatype='real' name='[Calculation_1549519785041477645]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([SBL_Bonus], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='GBIME BONUS' datatype='real' name='[Calculation_1549519785041842190]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([GBIME_Bonus]*100)' />
+      </column>
+      <column caption='F1 (cash dividend.csv)' datatype='integer' name='[F1 (cash_dividend.csv)]' role='measure' type='quantitative' />
+      <column caption='Fiscal Year (cash dividend.csv)' datatype='string' name='[Fiscal Year (cash_dividend.csv)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+      <column caption='GBIME Bonus' datatype='real' name='[GBIME_Bonus]' role='measure' type='quantitative' />
+      <column caption='GBIME Cash' datatype='string' name='[GBIME_Cash]' role='dimension' type='nominal' />
+      <column caption='NABIL Bonus' datatype='string' name='[NABIL_Bonus]' role='dimension' type='nominal' />
+      <column caption='NABIL Cash' datatype='real' name='[NABIL_Cash]' role='measure' type='quantitative' />
+      <column caption='NICA Bonus' datatype='string' name='[NICA_Bonus]' role='dimension' type='nominal' />
+      <column caption='NICA Cash' datatype='string' name='[NICA_Cash]' role='dimension' type='nominal' />
+      <column caption='PRVU Bonus' datatype='string' name='[PRVU_Bonus]' role='dimension' type='nominal' />
+      <column caption='PRVU Cash' datatype='string' name='[PRVU_Cash]' role='dimension' type='nominal' />
+      <column caption='SBL Bonus' datatype='string' name='[SBL_Bonus]' role='dimension' type='nominal' />
+      <column caption='SBL Cash' datatype='string' name='[SBL_Cash]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='bonus_share.csv' datatype='table' name='[__tableau_internal_object_id__].[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='cash_dividend.csv' datatype='table' name='[__tableau_internal_object_id__].[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]' role='measure' type='quantitative' />
+      <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Calculation_1549519785040928778]' derivation='Sum' name='[sum:Calculation_1549519785040928778:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1549519785041227787]' derivation='Sum' name='[sum:Calculation_1549519785041227787:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1549519785041330188]' derivation='Sum' name='[sum:Calculation_1549519785041330188:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1549519785041842190]' derivation='Sum' name='[sum:Calculation_1549519785041842190:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[GBIME_Bonus]' derivation='Sum' name='[sum:GBIME_Bonus:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_0ds3i9v13vnm22172vc9i1cytlvm.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/15/2024 03:25:28 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4' table='[Extract].[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4' table='[Extract].[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]' type='table' />
+            <relation name='cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB' table='[Extract].[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[F1 (cash_dividend.csv)]' value='[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB].[F1]' />
+            <map key='[F1]' value='[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4].[F1]' />
+            <map key='[Fiscal Year (cash_dividend.csv)]' value='[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB].[Fiscal Year]' />
+            <map key='[Fiscal Year]' value='[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4].[Fiscal Year]' />
+            <map key='[GBIME_Bonus]' value='[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4].[GBIME_Bonus]' />
+            <map key='[GBIME_Cash]' value='[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB].[GBIME_Cash]' />
+            <map key='[NABIL_Bonus]' value='[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4].[NABIL_Bonus]' />
+            <map key='[NABIL_Cash]' value='[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB].[NABIL_Cash]' />
+            <map key='[NICA_Bonus]' value='[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4].[NICA_Bonus]' />
+            <map key='[NICA_Cash]' value='[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB].[NICA_Cash]' />
+            <map key='[PRVU_Bonus]' value='[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4].[PRVU_Bonus]' />
+            <map key='[PRVU_Cash]' value='[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB].[PRVU_Cash]' />
+            <map key='[SBL_Bonus]' value='[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4].[SBL_Bonus]' />
+            <map key='[SBL_Cash]' value='[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB].[SBL_Cash]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>bonus_share.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fiscal Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fiscal Year]</local-name>
+              <parent-name>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</parent-name>
+              <remote-alias>Fiscal Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>bonus_share.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NICA_Bonus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NICA_Bonus]</local-name>
+              <parent-name>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</parent-name>
+              <remote-alias>NICA_Bonus</remote-alias>
+              <ordinal>2</ordinal>
+              <family>bonus_share.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRVU_Bonus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PRVU_Bonus]</local-name>
+              <parent-name>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</parent-name>
+              <remote-alias>PRVU_Bonus</remote-alias>
+              <ordinal>3</ordinal>
+              <family>bonus_share.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GBIME_Bonus</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[GBIME_Bonus]</local-name>
+              <parent-name>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</parent-name>
+              <remote-alias>GBIME_Bonus</remote-alias>
+              <ordinal>4</ordinal>
+              <family>bonus_share.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NABIL_Bonus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NABIL_Bonus]</local-name>
+              <parent-name>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</parent-name>
+              <remote-alias>NABIL_Bonus</remote-alias>
+              <ordinal>5</ordinal>
+              <family>bonus_share.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SBL_Bonus</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SBL_Bonus]</local-name>
+              <parent-name>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</parent-name>
+              <remote-alias>SBL_Bonus</remote-alias>
+              <ordinal>6</ordinal>
+              <family>bonus_share.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1 (cash_dividend.csv)]</local-name>
+              <parent-name>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>7</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fiscal Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fiscal Year (cash_dividend.csv)]</local-name>
+              <parent-name>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</parent-name>
+              <remote-alias>Fiscal Year</remote-alias>
+              <ordinal>8</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NICA_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NICA_Cash]</local-name>
+              <parent-name>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</parent-name>
+              <remote-alias>NICA_Cash</remote-alias>
+              <ordinal>9</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRVU_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PRVU_Cash]</local-name>
+              <parent-name>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</parent-name>
+              <remote-alias>PRVU_Cash</remote-alias>
+              <ordinal>10</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GBIME_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GBIME_Cash]</local-name>
+              <parent-name>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</parent-name>
+              <remote-alias>GBIME_Cash</remote-alias>
+              <ordinal>11</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NABIL_Cash</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NABIL_Cash]</local-name>
+              <parent-name>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</parent-name>
+              <remote-alias>NABIL_Cash</remote-alias>
+              <ordinal>12</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SBL_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SBL_Cash]</local-name>
+              <parent-name>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</parent-name>
+              <remote-alias>SBL_Cash</remote-alias>
+              <ordinal>13</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-hidden-fields='true' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:GBIME_Bonus:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785009364994:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785009852419:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785009954821:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785036484617:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785040928778:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785041227787:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785041330188:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785041842190:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Fiscal Year:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;071-072&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;076-077&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;075-076&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;074-075&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;072-073&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;073-074&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nepal&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Fiscal Year' />
+        <field-sort-custom-order field='NICA_Bonus' />
+        <field-sort-custom-order field='Calculation_1549519785041227787' />
+        <field-sort-custom-order field='PRVU_Bonus' />
+        <field-sort-custom-order field='Calculation_1549519785041330188' />
+        <field-sort-custom-order field='GBIME_Bonus' />
+        <field-sort-custom-order field='Calculation_1549519785041842190' />
+        <field-sort-custom-order field='NABIL_Bonus' />
+        <field-sort-custom-order field='Calculation_1549519785040928778' />
+        <field-sort-custom-order field='SBL_Bonus' />
+        <field-sort-custom-order field='Calculation_1549519785041477645' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <datasource-dependencies datasource='federated.0suy7jp0j5z37014mbyqu0plpfcp'>
+        <column caption='GBIME CASH' datatype='real' name='[Calculation_1549519785009364994]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='FLOAT(REPLACE([GBIME_Cash], &quot;%&quot;, &quot;&quot;))' />
+        </column>
+        <column caption='NICA CASH' datatype='real' name='[Calculation_1549519785009852419]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='FLOAT(REPLACE([NICA_Cash], &quot;%&quot;, &quot;&quot;))' />
+        </column>
+        <column caption='PRVU CASH' datatype='real' name='[Calculation_1549519785009954821]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='FLOAT(REPLACE([PRVU_Cash], &quot;%&quot;, &quot;&quot;))' />
+        </column>
+        <column caption='NABIL CASH' datatype='real' name='[Calculation_1549519785036484617]' role='measure' type='quantitative'>
+          <calculation class='tableau' formula='FLOAT([NABIL_Cash]*100)' />
+        </column>
+        <column-instance column='[Calculation_1549519785009364994]' derivation='Sum' name='[sum:Calculation_1549519785009364994:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_1549519785009852419]' derivation='Sum' name='[sum:Calculation_1549519785009852419:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_1549519785009954821]' derivation='Sum' name='[sum:Calculation_1549519785009954821:qk]' pivot='key' type='quantitative' />
+        <column-instance column='[Calculation_1549519785036484617]' derivation='Sum' name='[sum:Calculation_1549519785036484617:qk]' pivot='key' type='quantitative' />
+      </datasource-dependencies>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='bonus_share.csv' id='bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4'>
+            <properties context=''>
+              <relation connection='textscan.11h25ug1tb3t8n17ed0sk0icu91f' name='bonus_share.csv' table='[bonus_share#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Fiscal Year' ordinal='1' />
+                  <column datatype='string' name='NICA_Bonus' ordinal='2' />
+                  <column datatype='string' name='PRVU_Bonus' ordinal='3' />
+                  <column datatype='real' name='GBIME_Bonus' ordinal='4' />
+                  <column datatype='string' name='NABIL_Bonus' ordinal='5' />
+                  <column datatype='string' name='SBL_Bonus' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4' table='[Extract].[bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4]' type='table' />
+            </properties>
+          </object>
+          <object caption='cash_dividend.csv' id='cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB'>
+            <properties context=''>
+              <relation connection='textscan.11h25ug1tb3t8n17ed0sk0icu91f' name='cash_dividend.csv' table='[cash_dividend#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Fiscal Year' ordinal='1' />
+                  <column datatype='string' name='NICA_Cash' ordinal='2' />
+                  <column datatype='string' name='PRVU_Cash' ordinal='3' />
+                  <column datatype='string' name='GBIME_Cash' ordinal='4' />
+                  <column datatype='real' name='NABIL_Cash' ordinal='5' />
+                  <column datatype='string' name='SBL_Cash' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB' table='[Extract].[cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Fiscal Year]' />
+              <expression op='[Fiscal Year (cash_dividend.csv)]' />
+            </expression>
+            <first-end-point object-id='bonus_share.csv_E8EDE39E753140198C3FF3F136781BD4' unique-key='true' />
+            <second-end-point object-id='cash_dividend.csv_58E615DB448044AD8A56E47EEFAADFEB' unique-key='true' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='cash_dividend' inline='true' name='federated.0suy7jp0j5z37014mbyqu0plpfcp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='cash_dividend' name='textscan.0oyxsft0veor1110pyo8q0smniou'>
+            <connection class='textscan' directory='C:/Users/sunne/Videos/bbs/data' filename='cash_dividend.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0oyxsft0veor1110pyo8q0smniou' name='cash_dividend.csv' table='[cash_dividend#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Fiscal Year' ordinal='1' />
+            <column datatype='string' name='NICA_Cash' ordinal='2' />
+            <column datatype='string' name='PRVU_Cash' ordinal='3' />
+            <column datatype='string' name='GBIME_Cash' ordinal='4' />
+            <column datatype='real' name='NABIL_Cash' ordinal='5' />
+            <column datatype='string' name='SBL_Cash' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0oyxsft0veor1110pyo8q0smniou' name='cash_dividend.csv' table='[cash_dividend#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Fiscal Year' ordinal='1' />
+            <column datatype='string' name='NICA_Cash' ordinal='2' />
+            <column datatype='string' name='PRVU_Cash' ordinal='3' />
+            <column datatype='string' name='GBIME_Cash' ordinal='4' />
+            <column datatype='real' name='NABIL_Cash' ordinal='5' />
+            <column datatype='string' name='SBL_Cash' ordinal='6' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fiscal Year]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>Fiscal Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NICA_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NICA_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>NICA_Cash</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRVU_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRVU_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>PRVU_Cash</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GBIME_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[GBIME_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>GBIME_Cash</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NABIL_Cash</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[NABIL_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>NABIL_Cash</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SBL_Cash</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SBL_Cash]</local-name>
+            <parent-name>[cash_dividend.csv]</parent-name>
+            <remote-alias>SBL_Cash</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='GBIME CASH' datatype='real' name='[Calculation_1549519785009364994]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([GBIME_Cash], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='NICA CASH' datatype='real' name='[Calculation_1549519785009852419]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([NICA_Cash], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='PRVU CASH' datatype='real' name='[Calculation_1549519785009954821]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([PRVU_Cash], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='SBL CASH' datatype='real' name='[Calculation_1549519785011347464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT(REPLACE([SBL_Cash], &quot;%&quot;, &quot;&quot;))' />
+      </column>
+      <column caption='NABIL CASH' datatype='real' name='[Calculation_1549519785036484617]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='FLOAT([NABIL_Cash]*100)' />
+      </column>
+      <column caption='GBIME Cash' datatype='string' name='[GBIME_Cash]' role='dimension' type='nominal' />
+      <column caption='NABIL Cash' datatype='real' hidden='true' name='[NABIL_Cash]' role='measure' type='ordinal' />
+      <column caption='NICA Cash' datatype='string' name='[NICA_Cash]' role='dimension' type='nominal' />
+      <column caption='PRVU Cash' datatype='string' name='[PRVU_Cash]' role='dimension' type='nominal' />
+      <column caption='SBL Cash' datatype='string' name='[SBL_Cash]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='cash_dividend.csv' datatype='table' name='[__tableau_internal_object_id__].[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1c1lrhz1hjae2u1a534a70ffyyiw.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/15/2024 05:27:08 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fiscal Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fiscal Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Fiscal Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NICA_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[NICA_Cash]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NICA_Cash</remote-alias>
+              <ordinal>2</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PRVU_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[PRVU_Cash]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PRVU_Cash</remote-alias>
+              <ordinal>3</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GBIME_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[GBIME_Cash]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GBIME_Cash</remote-alias>
+              <ordinal>4</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>8</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>NABIL_Cash</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[NABIL_Cash]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>NABIL_Cash</remote-alias>
+              <ordinal>5</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SBL_Cash</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[SBL_Cash]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SBL_Cash</remote-alias>
+              <ordinal>6</ordinal>
+              <family>cash_dividend.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nepal&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='F1' />
+        <field-sort-custom-order field='Fiscal Year' />
+        <field-sort-custom-order field='NICA_Cash' />
+        <field-sort-custom-order field='Calculation_1549519785009852419' />
+        <field-sort-custom-order field='NICA (copy)_1549519785010933767' />
+        <field-sort-custom-order field='PRVU_Cash' />
+        <field-sort-custom-order field='Calculation_1549519785009954821' />
+        <field-sort-custom-order field='PRVU Cash (copy)_1549519785009922052' />
+        <field-sort-custom-order field='Calculation_1549519785007476737' />
+        <field-sort-custom-order field='GBIME_Cash' />
+        <field-sort-custom-order field='Calculation_1549519785009364994' />
+        <field-sort-custom-order field='NABIL_Cash' />
+        <field-sort-custom-order field='Calculation_1549519785036484617' />
+        <field-sort-custom-order field='SBL_Cash' />
+        <field-sort-custom-order field='Calculation_1549519785011347464' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='cash_dividend.csv' id='cash_dividend.csv_46AE393FAE1849E58889DF16BB8DFD8C'>
+            <properties context=''>
+              <relation connection='textscan.0oyxsft0veor1110pyo8q0smniou' name='cash_dividend.csv' table='[cash_dividend#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Fiscal Year' ordinal='1' />
+                  <column datatype='string' name='NICA_Cash' ordinal='2' />
+                  <column datatype='string' name='PRVU_Cash' ordinal='3' />
+                  <column datatype='string' name='GBIME_Cash' ordinal='4' />
+                  <column datatype='real' name='NABIL_Cash' ordinal='5' />
+                  <column datatype='string' name='SBL_Cash' ordinal='6' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='GBIME'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bonus_share' name='federated.1w8pl1a029r62l1ee9ib11otd8s0' />
+            <datasource caption='cash_dividend' name='federated.0suy7jp0j5z37014mbyqu0plpfcp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0suy7jp0j5z37014mbyqu0plpfcp'>
+            <column caption='GBIME CASH' datatype='real' name='[Calculation_1549519785009364994]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([GBIME_Cash], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column caption='GBIME Cash' datatype='string' name='[GBIME_Cash]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1549519785009364994]' derivation='Sum' name='[sum:Calculation_1549519785009364994:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1w8pl1a029r62l1ee9ib11otd8s0'>
+            <column caption='GBIME BONUS' datatype='real' name='[Calculation_1549519785041842190]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([GBIME_Bonus]*100)' />
+            </column>
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column caption='GBIME Bonus' datatype='real' name='[GBIME_Bonus]' role='measure' type='quantitative' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1549519785041842190]' derivation='Sum' name='[sum:Calculation_1549519785041842190:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785041842190:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785009364994:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' value='46' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' />
+              <text column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[Multiple Values]</run>
+                <run>&gt;%</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[Multiple Values]</rows>
+        <cols>([federated.1w8pl1a029r62l1ee9ib11otd8s0].[none:Fiscal Year:nk] / [federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{58BC8CF9-8100-44C2-8DEB-9C9204E6A711}' />
+    </worksheet>
+    <worksheet name='NABIL'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt; </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bonus_share' name='federated.1w8pl1a029r62l1ee9ib11otd8s0' />
+            <datasource caption='cash_dividend' name='federated.0suy7jp0j5z37014mbyqu0plpfcp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0suy7jp0j5z37014mbyqu0plpfcp'>
+            <column caption='NABIL CASH' datatype='real' name='[Calculation_1549519785036484617]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT([NABIL_Cash]*100)' />
+            </column>
+            <column caption='NABIL Cash' datatype='real' hidden='true' name='[NABIL_Cash]' role='measure' type='ordinal' />
+            <column-instance column='[Calculation_1549519785036484617]' derivation='Sum' name='[sum:Calculation_1549519785036484617:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1w8pl1a029r62l1ee9ib11otd8s0'>
+            <column caption='NABIL BONUS' datatype='real' name='[Calculation_1549519785040928778]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([NABIL_Bonus], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column caption='NABIL Bonus' datatype='string' name='[NABIL_Bonus]' role='dimension' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1549519785040928778]' derivation='Sum' name='[sum:Calculation_1549519785040928778:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785040928778:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785036484617:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[Multiple Values]</rows>
+        <cols>([federated.1w8pl1a029r62l1ee9ib11otd8s0].[none:Fiscal Year:nk] / [federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{CCACB03C-0877-4694-9C2A-F521722A9DC1}' />
+    </worksheet>
+    <worksheet name='NICA'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bonus_share' name='federated.1w8pl1a029r62l1ee9ib11otd8s0' />
+            <datasource caption='cash_dividend' name='federated.0suy7jp0j5z37014mbyqu0plpfcp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0suy7jp0j5z37014mbyqu0plpfcp'>
+            <column caption='NICA CASH' datatype='real' name='[Calculation_1549519785009852419]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([NICA_Cash], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column caption='NICA Cash' datatype='string' name='[NICA_Cash]' role='dimension' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1549519785009852419]' derivation='Sum' name='[sum:Calculation_1549519785009852419:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1w8pl1a029r62l1ee9ib11otd8s0'>
+            <column caption='NICA BONUS' datatype='real' name='[Calculation_1549519785041227787]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([NICA_Bonus], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column caption='NICA Bonus' datatype='string' name='[NICA_Bonus]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1549519785041227787]' derivation='Sum' name='[sum:Calculation_1549519785041227787:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785041227787:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785009852419:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' />
+              <text column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[Multiple Values]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[Multiple Values]</rows>
+        <cols>([federated.0suy7jp0j5z37014mbyqu0plpfcp].[none:Fiscal Year:nk] / [federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{F0C788D3-CF3C-4060-BC22-A6A9B030195E}' />
+    </worksheet>
+    <worksheet name='PRVU'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='bonus_share' name='federated.1w8pl1a029r62l1ee9ib11otd8s0' />
+            <datasource caption='cash_dividend' name='federated.0suy7jp0j5z37014mbyqu0plpfcp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0suy7jp0j5z37014mbyqu0plpfcp'>
+            <column caption='PRVU CASH' datatype='real' name='[Calculation_1549519785009954821]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([PRVU_Cash], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column caption='PRVU Cash' datatype='string' name='[PRVU_Cash]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1549519785009954821]' derivation='Sum' name='[sum:Calculation_1549519785009954821:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1w8pl1a029r62l1ee9ib11otd8s0'>
+            <column caption='PRVU BONUS' datatype='real' name='[Calculation_1549519785041330188]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([PRVU_Bonus], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column caption='PRVU Bonus' datatype='string' name='[PRVU_Bonus]' role='dimension' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1549519785041330188]' derivation='Sum' name='[sum:Calculation_1549519785041330188:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785041330188:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785009954821:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1w8pl1a029r62l1ee9ib11otd8s0].[Multiple Values]</rows>
+        <cols>([federated.1w8pl1a029r62l1ee9ib11otd8s0].[none:Fiscal Year:nk] / [federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{81AE2307-1CA3-4271-86BE-E6103884050E}' />
+    </worksheet>
+    <worksheet name='SBL'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='cash_dividend' name='federated.0suy7jp0j5z37014mbyqu0plpfcp' />
+            <datasource caption='bonus_share' name='federated.1w8pl1a029r62l1ee9ib11otd8s0' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0suy7jp0j5z37014mbyqu0plpfcp'>
+            <column caption='SBL CASH' datatype='real' name='[Calculation_1549519785011347464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([SBL_Cash], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column caption='SBL Cash' datatype='string' name='[SBL_Cash]' role='dimension' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1549519785011347464]' derivation='Sum' name='[sum:Calculation_1549519785011347464:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1w8pl1a029r62l1ee9ib11otd8s0'>
+            <column caption='SBL BONUS' datatype='real' name='[Calculation_1549519785041477645]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='FLOAT(REPLACE([SBL_Bonus], &quot;%&quot;, &quot;&quot;))' />
+            </column>
+            <column caption='SBL Bonus' datatype='string' name='[SBL_Bonus]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1549519785041477645]' derivation='Sum' name='[sum:Calculation_1549519785041477645:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0suy7jp0j5z37014mbyqu0plpfcp].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0suy7jp0j5z37014mbyqu0plpfcp].[sum:Calculation_1549519785011347464:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1w8pl1a029r62l1ee9ib11otd8s0].[sum:Calculation_1549519785041477645:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0suy7jp0j5z37014mbyqu0plpfcp].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0suy7jp0j5z37014mbyqu0plpfcp].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0suy7jp0j5z37014mbyqu0plpfcp].[Multiple Values]</rows>
+        <cols>([federated.0suy7jp0j5z37014mbyqu0plpfcp].[none:Fiscal Year:nk] / [federated.0suy7jp0j5z37014mbyqu0plpfcp].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{06CE1E48-1E6C-4551-92D5-1403489FFC9D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='63'>
+    <window class='worksheet' maximized='true' name='GBIME'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{94EC5ACC-4A94-46AF-BBC4-9164ADC702B5}' />
+    </window>
+    <window class='worksheet' name='NICA'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F28F86AA-27BA-4E40-8766-9FFE94E83208}' />
+    </window>
+    <window class='worksheet' name='NABIL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{431FFDD2-3124-410C-B303-17F888BF7CC9}' />
+    </window>
+    <window class='worksheet' name='PRVU'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1w8pl1a029r62l1ee9ib11otd8s0].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{D4879A9F-7BD9-47BF-8D11-8F9C65127511}' />
+    </window>
+    <window class='worksheet' name='SBL'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0suy7jp0j5z37014mbyqu0plpfcp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{810AB301-01B7-4C5B-85E1-97D1AF57B058}' />
+    </window>
+  </windows>
+</workbook>
