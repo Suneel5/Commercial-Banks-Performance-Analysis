@@ -1,0 +1,867 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0618.0924                               -->
+<workbook original-version='18.1' source-build='2024.1.4 (20241.24.0618.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='allBank_Indicators+' inline='true' name='federated.1936s2o1med37214jpefl0g5jwn1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='allBank_Indicators' name='textscan.16y6kse0bcc5w81f644cm1l0n73e'>
+            <connection class='textscan' directory='D:/Documents2/git_new/Commercial-Banks-Stocks/data' filename='allBank_Indicators.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.16y6kse0bcc5w81f644cm1l0n73e' name='allBank_Indicators.csv' table='[allBank_Indicators#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Fiscal Year' ordinal='1' />
+            <column datatype='real' name='Net Profit/Gross Income' ordinal='2' />
+            <column datatype='real' name='Earnings Per Share' ordinal='3' />
+            <column datatype='real' name='Price/Earnings Ratio' ordinal='4' />
+            <column datatype='real' name='Bonus Dividend' ordinal='5' />
+            <column datatype='real' name='Cash Dividend' ordinal='6' />
+            <column datatype='string' name='Bank' ordinal='7' />
+            <column datatype='real' name='Total Dividend' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation connection='textscan.16y6kse0bcc5w81f644cm1l0n73e' name='allBank_Indicators.csv' table='[allBank_Indicators#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='Fiscal Year' ordinal='1' />
+              <column datatype='real' name='Net Profit/Gross Income' ordinal='2' />
+              <column datatype='real' name='Earnings Per Share' ordinal='3' />
+              <column datatype='real' name='Price/Earnings Ratio' ordinal='4' />
+              <column datatype='real' name='Bonus Dividend' ordinal='5' />
+              <column datatype='real' name='Cash Dividend' ordinal='6' />
+              <column datatype='string' name='Bank' ordinal='7' />
+              <column datatype='real' name='Total Dividend' ordinal='8' />
+            </columns>
+          </relation>
+          <relation connection='textscan.16y6kse0bcc5w81f644cm1l0n73e' name='allBanksPrices.csv' table='[allBanksPrices#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+              <column datatype='string' name='Bank' ordinal='0' />
+              <column datatype='date' name='Date' ordinal='1' />
+              <column datatype='real' name='Close' ordinal='2' />
+              <column datatype='real' name='Volume' ordinal='3' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[Bank (allBanksPrices.csv)]' value='[allBanksPrices.csv].[Bank]' />
+          <map key='[Bank]' value='[allBank_Indicators.csv].[Bank]' />
+          <map key='[Bonus Dividend]' value='[allBank_Indicators.csv].[Bonus Dividend]' />
+          <map key='[Cash Dividend]' value='[allBank_Indicators.csv].[Cash Dividend]' />
+          <map key='[Close]' value='[allBanksPrices.csv].[Close]' />
+          <map key='[Date]' value='[allBanksPrices.csv].[Date]' />
+          <map key='[Earnings Per Share]' value='[allBank_Indicators.csv].[Earnings Per Share]' />
+          <map key='[F1]' value='[allBank_Indicators.csv].[F1]' />
+          <map key='[Fiscal Year]' value='[allBank_Indicators.csv].[Fiscal Year]' />
+          <map key='[Net Profit/Gross Income]' value='[allBank_Indicators.csv].[Net Profit/Gross Income]' />
+          <map key='[Price/Earnings Ratio]' value='[allBank_Indicators.csv].[Price/Earnings Ratio]' />
+          <map key='[Total Dividend]' value='[allBank_Indicators.csv].[Total Dividend]' />
+          <map key='[Volume]' value='[allBanksPrices.csv].[Volume]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[allBanksPrices.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Fiscal Year</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Fiscal Year]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Fiscal Year</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Net Profit/Gross Income</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Net Profit/Gross Income]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Net Profit/Gross Income</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Earnings Per Share</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Earnings Per Share]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Earnings Per Share</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Price/Earnings Ratio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Price/Earnings Ratio]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Price/Earnings Ratio</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bonus Dividend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bonus Dividend]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Bonus Dividend</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cash Dividend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Cash Dividend]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Cash Dividend</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bank]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Bank</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Dividend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total Dividend]</local-name>
+            <parent-name>[allBank_Indicators.csv]</parent-name>
+            <remote-alias>Total Dividend</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Bank (allBanksPrices.csv)]</local-name>
+            <parent-name>[allBanksPrices.csv]</parent-name>
+            <remote-alias>Bank</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[allBanksPrices.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Close]</local-name>
+            <parent-name>[allBanksPrices.csv]</parent-name>
+            <remote-alias>Close</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Volume</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Volume]</local-name>
+            <parent-name>[allBanksPrices.csv]</parent-name>
+            <remote-alias>Volume</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='allBank_Indicators.csv' datatype='table' name='[__tableau_internal_object_id__].[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='allBanksPrices.csv' datatype='table' name='[__tableau_internal_object_id__].[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='Data/TableauTemp/#TableauTemp_1sa4th60avogbz134buwt081d7dz.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/24/2024 09:36:18 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6' table='[Extract].[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+            <relation name='allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6' table='[Extract].[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]' type='table' />
+            <relation name='allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE' table='[Extract].[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]' type='table' />
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <cols>
+            <map key='[Bank (allBanksPrices.csv)]' value='[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE].[Bank]' />
+            <map key='[Bank]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Bank]' />
+            <map key='[Bonus Dividend]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Bonus Dividend]' />
+            <map key='[Cash Dividend]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Cash Dividend]' />
+            <map key='[Close]' value='[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE].[Close]' />
+            <map key='[Date]' value='[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE].[Date]' />
+            <map key='[Earnings Per Share]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Earnings Per Share]' />
+            <map key='[F1]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[F1]' />
+            <map key='[Fiscal Year]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Fiscal Year]' />
+            <map key='[Net Profit/Gross Income]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Net Profit/Gross Income]' />
+            <map key='[Price/Earnings Ratio]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Price/Earnings Ratio]' />
+            <map key='[Total Dividend]' value='[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6].[Total Dividend]' />
+            <map key='[Volume]' value='[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE].[Volume]' />
+          </cols>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Fiscal Year</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Fiscal Year]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Fiscal Year</remote-alias>
+              <ordinal>1</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Net Profit/Gross Income</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Net Profit/Gross Income]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Net Profit/Gross Income</remote-alias>
+              <ordinal>2</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Earnings Per Share</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Earnings Per Share]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Earnings Per Share</remote-alias>
+              <ordinal>3</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>49</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Price/Earnings Ratio</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Price/Earnings Ratio]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Price/Earnings Ratio</remote-alias>
+              <ordinal>4</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>50</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bonus Dividend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bonus Dividend]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Bonus Dividend</remote-alias>
+              <ordinal>5</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>29</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cash Dividend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Cash Dividend]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Cash Dividend</remote-alias>
+              <ordinal>6</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bank]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Bank</remote-alias>
+              <ordinal>7</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total Dividend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total Dividend]</local-name>
+              <parent-name>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</parent-name>
+              <remote-alias>Total Dividend</remote-alias>
+              <ordinal>8</ordinal>
+              <family>allBank_Indicators.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>39</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bank</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Bank (allBanksPrices.csv)]</local-name>
+              <parent-name>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</parent-name>
+              <remote-alias>Bank</remote-alias>
+              <ordinal>9</ordinal>
+              <family>allBanksPrices.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>10</ordinal>
+              <family>allBanksPrices.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1737</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Close</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Close]</local-name>
+              <parent-name>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</parent-name>
+              <remote-alias>Close</remote-alias>
+              <ordinal>11</ordinal>
+              <family>allBanksPrices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1817</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Volume</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Volume]</local-name>
+              <parent-name>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</parent-name>
+              <remote-alias>Volume</remote-alias>
+              <ordinal>12</ordinal>
+              <family>allBanksPrices.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>9664</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Nepal&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='allBank_Indicators.csv' id='allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6'>
+            <properties context=''>
+              <relation connection='textscan.16y6kse0bcc5w81f644cm1l0n73e' name='allBank_Indicators.csv' table='[allBank_Indicators#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Fiscal Year' ordinal='1' />
+                  <column datatype='real' name='Net Profit/Gross Income' ordinal='2' />
+                  <column datatype='real' name='Earnings Per Share' ordinal='3' />
+                  <column datatype='real' name='Price/Earnings Ratio' ordinal='4' />
+                  <column datatype='real' name='Bonus Dividend' ordinal='5' />
+                  <column datatype='real' name='Cash Dividend' ordinal='6' />
+                  <column datatype='string' name='Bank' ordinal='7' />
+                  <column datatype='real' name='Total Dividend' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6' table='[Extract].[allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6]' type='table' />
+            </properties>
+          </object>
+          <object caption='allBanksPrices.csv' id='allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE'>
+            <properties context=''>
+              <relation connection='textscan.16y6kse0bcc5w81f644cm1l0n73e' name='allBanksPrices.csv' table='[allBanksPrices#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Bank' ordinal='0' />
+                  <column datatype='date' name='Date' ordinal='1' />
+                  <column datatype='real' name='Close' ordinal='2' />
+                  <column datatype='real' name='Volume' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE' table='[Extract].[allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Bank]' />
+              <expression op='[Bank (allBanksPrices.csv)]' />
+            </expression>
+            <first-end-point object-id='allBank_Indicators.csv_3CA58A06F6774620B635891E1E33A4D6' />
+            <second-end-point object-id='allBanksPrices.csv_7C93C6A1A46B4527B1E8A4734F6076EE' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Pe ratio'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allBank_Indicators+' name='federated.1936s2o1med37214jpefl0g5jwn1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1936s2o1med37214jpefl0g5jwn1'>
+            <column datatype='string' name='[Bank]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Price/Earnings Ratio]' role='measure' type='quantitative' />
+            <column-instance column='[Bank]' derivation='None' name='[none:Bank:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Price/Earnings Ratio]' derivation='Sum' name='[sum:Price/Earnings Ratio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Price/Earnings Ratio:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Price/Earnings Ratio:qk]</rows>
+        <cols>([federated.1936s2o1med37214jpefl0g5jwn1].[none:Fiscal Year:nk] / [federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk])</cols>
+      </table>
+      <simple-id uuid='{25014432-2187-4F3E-AA84-35BEAC6E9AF5}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allBank_Indicators+' name='federated.1936s2o1med37214jpefl0g5jwn1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1936s2o1med37214jpefl0g5jwn1'>
+            <column datatype='string' name='[Bank]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Total Dividend]' role='measure' type='quantitative' />
+            <column-instance column='[Bank]' derivation='None' name='[none:Bank:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Dividend]' derivation='Sum' name='[sum:Total Dividend:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Total Dividend:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Total Dividend:qk]</rows>
+        <cols>([federated.1936s2o1med37214jpefl0g5jwn1].[none:Fiscal Year:nk] / [federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk])</cols>
+      </table>
+      <simple-id uuid='{932F6052-0483-4137-95CF-32EAB97B308B}' />
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allBank_Indicators+' name='federated.1936s2o1med37214jpefl0g5jwn1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1936s2o1med37214jpefl0g5jwn1'>
+            <column datatype='string' name='[Bank]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Close]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Earnings Per Share]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column-instance column='[Close]' derivation='Avg' name='[avg:Close:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bank]' derivation='None' name='[none:Bank:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Earnings Per Share]' derivation='Sum' name='[sum:Earnings Per Share:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1936s2o1med37214jpefl0g5jwn1].[none:Fiscal Year:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Fiscal Year:nk]' member='&quot;2075/76&quot;' />
+              <groupfilter function='member' level='[none:Fiscal Year:nk]' member='&quot;2076/77&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1936s2o1med37214jpefl0g5jwn1].[none:Fiscal Year:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1936s2o1med37214jpefl0g5jwn1].[avg:Close:qk]</rows>
+        <cols>[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Earnings Per Share:qk]</cols>
+      </table>
+      <simple-id uuid='{F910417F-577D-4355-80C6-D528263167EA}' />
+    </worksheet>
+    <worksheet name='eps'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allBank_Indicators+' name='federated.1936s2o1med37214jpefl0g5jwn1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1936s2o1med37214jpefl0g5jwn1'>
+            <column datatype='string' name='[Bank]' role='dimension' type='nominal' />
+            <column datatype='real' name='[Earnings Per Share]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Fiscal Year]' role='dimension' type='nominal' />
+            <column-instance column='[Bank]' derivation='None' name='[none:Bank:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Fiscal Year]' derivation='None' name='[none:Fiscal Year:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Earnings Per Share]' derivation='Sum' name='[sum:Earnings Per Share:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Earnings Per Share:qk]' shelf='columns' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Earnings Per Share:qk]</rows>
+        <cols>([federated.1936s2o1med37214jpefl0g5jwn1].[none:Fiscal Year:nk] / [federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk])</cols>
+      </table>
+      <simple-id uuid='{2F3FFEE1-1861-46D0-8547-A06413257208}' />
+    </worksheet>
+    <worksheet name='eps vs dividend'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='allBank_Indicators+' name='federated.1936s2o1med37214jpefl0g5jwn1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1936s2o1med37214jpefl0g5jwn1'>
+            <column datatype='real' name='[Earnings Per Share]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Total Dividend]' role='measure' type='quantitative' />
+            <column-instance column='[Earnings Per Share]' derivation='Sum' name='[sum:Earnings Per Share:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total Dividend]' derivation='Sum' name='[sum:Total Dividend:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='false' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Total Dividend:qk]</rows>
+        <cols>[federated.1936s2o1med37214jpefl0g5jwn1].[sum:Earnings Per Share:qk]</cols>
+      </table>
+      <simple-id uuid='{397216E1-1A46-4147-B2AA-C3F310EDD829}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' name='eps'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{83DD3C3D-5009-4152-B29A-A00E4F47321E}' />
+    </window>
+    <window class='worksheet' name='Pe ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{828BE9EC-54E5-438B-8ED5-4AE469F796BB}' />
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{D6410B71-6C7E-4514-802A-01B278B497F5}' />
+    </window>
+    <window class='worksheet' name='eps vs dividend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{9D8F2739-7079-4C0D-B459-E33290BEA118}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1936s2o1med37214jpefl0g5jwn1].[none:Fiscal Year:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1936s2o1med37214jpefl0g5jwn1].[none:Bank:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{7621FD22-9244-4A87-89AD-A5C49FF9E77E}' />
+    </window>
+  </windows>
+</workbook>
