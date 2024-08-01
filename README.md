@@ -5,6 +5,10 @@ This study aims to provide a comprehensive analysis of the performance of commer
 
 The analysis focuses on the following top 10 banks: Global IME Bank, NABIL Bank, NIC Asia Bank, Siddhartha Bank, Prabhu Bank, Kumari Bank, Prime Bank , Sanima Bank, Everest Bank, and Agricultural Development Bank
 
+## Demo
+![Commercial Banks Performance Overview](gif/overview.gif)
+![Commercial Banks Performance Comparison](gif/comparison.gif)
+
 ## Raw Data
 The raw data is categorized into two main types:
 
