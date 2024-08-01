@@ -7,6 +7,7 @@ The analysis focuses on the following top 10 banks: Global IME Bank, NABIL Bank,
 
 ## Demo
 ![Commercial Banks Performance Overview](gif/overview.gif)
+
 ![Commercial Banks Performance Comparison](gif/comparison.gif)
 
 ## Raw Data
