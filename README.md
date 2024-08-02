@@ -6,7 +6,11 @@ This study aims to provide a comprehensive analysis of the performance of commer
 The analysis focuses on the following top 10 banks: Global IME Bank, NABIL Bank, NIC Asia Bank, Siddhartha Bank, Prabhu Bank, Kumari Bank, Prime Bank , Sanima Bank, Everest Bank, and Agricultural Development Bank
 
 ## Demo
+[Commercial Banks Performance Overview](https://public.tableau.com/views/CommercialBankPerformanceOverview/Dashboard12?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 ![Commercial Banks Performance Overview](gif/overview.gif)
+
+[Commercial Banks Performance Comparison](https://public.tableau.com/views/CommercialBanksPerformanceComparision/Dashboard22?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ![Commercial Banks Performance Comparison](gif/comparison.gif)
 
@@ -29,8 +33,12 @@ The cleaned and consolidated data is organized into two final CSV files:
 Above data are analyzed and two main dashboards are built with the help of tableau:
 
 ### 1. Commercial Banks Performance Overview
+[View Dashboard](https://public.tableau.com/views/CommercialBankPerformanceOverview/Dashboard12?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 This dashboard provides an overview of the performance of individual commercial banks, showing metrics such as Net Profit/Gross Income, Earnings Per Share, PE Ratio, Total Dividend, Stock Price trends, and Dividend Distribution.
 
 ### 2. Commercial Banks Performance Comparison
+[View Dashboard](https://public.tableau.com/views/CommercialBanksPerformanceComparision/Dashboard22?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
 This dashboard allows for a comparison between different commercial banks, highlighting metrics such as EPS Value, PE Ratio, and Stock Price trends across different fiscal years.
 
