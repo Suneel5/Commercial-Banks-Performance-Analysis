@@ -1,7 +1,7 @@
 # Commercial Banks Performance Analysis
 
 ## Overview
-This study aims to provide a comprehensive analysis of the performance of commercial banks in Nepal. The main objective is to evaluate and compare key financial metrics and stock price behaviors across different banks to gain insights into their financial health and market performance. This analysis is intended to assist stakeholders in making informed decisions regarding investments and financial strategies within the banking sector. The dashboards provide visualizations to help compare and understand the performance trends of these banks.
+This study aims to provide a comprehensive analysis of the performance of commercial banks in Nepal. The dashboards provide visualizations to help compare and understand the performance trends of Commercial banks banks. The main objective is to evaluate and compare key financial metrics and stock price behaviors across different banks to gain insights into their financial health and market performance. This analysis is intended to assist stakeholders in making informed decisions regarding investments and financial strategies within the banking sector. 
 
 The analysis focuses on the following top 10 banks: Global IME Bank, NABIL Bank, NIC Asia Bank, Siddhartha Bank, Prabhu Bank, Kumari Bank, Prime Bank , Sanima Bank, Everest Bank, and Agricultural Development Bank
 
