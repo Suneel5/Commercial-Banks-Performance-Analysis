@@ -24,7 +24,7 @@ Each CSV file in this category contains metrics for a specific bank over differe
 Each CSV file in this category contains stock prices for a specific bank over the last 5 years. The source of this data is the NEPSE (Nepal Stock Exchange) website.
 
 ## Final Cleaned Data
-The cleaned and consolidated data is organized into two final CSV files:
+Data are cleaned and merged using pandas.  The cleaned and consolidated data is organized into two final CSV files:
 
 - **Final Indicators**: This file combines all the metrics data for all banks.
 - **Final Stock Price**: This file combines all the stock price data for all banks.
